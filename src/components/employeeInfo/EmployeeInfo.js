@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import EmployeeBody from "../employeeBody/index";
+import './employeeInfo.css';
 
 
 // Do we have to make our own employee info
@@ -18,9 +19,12 @@ class EmployeeDetail extends Component {
         })
     }
 
+    //onchange (and pass into searchbar as a prompt)
+
     render() { 
         return(
-        <div className="text-center">
+        <div className="employees">
+            {/* Inlcude here our searchbar */}
             <EmployeeBody users={this.state.filteredUsers} />
         </div>
     )
