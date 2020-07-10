@@ -6,7 +6,7 @@ const styles = {
       margin: 20,
       background: "lightblue"
     }
-}
+};
 
 function employeeBody({ users }) {
 

@@ -1,3 +1,5 @@
 .employees{
     text-align: left;
+    border: black;
+    border-width: 15px;
 }

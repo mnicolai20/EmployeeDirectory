@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Directory from "./components/employeeInfo/EmployeeInfo";
+import Directory from "./components/employeeInfo/index.js";
 
 function App() {
   return (
