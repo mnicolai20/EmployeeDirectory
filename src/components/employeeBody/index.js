@@ -16,7 +16,7 @@ function employeeBody({ users }) {
                 users[0] !== undefined && users[0].name !== undefined ? (
                     users.map(({ login, name, picture, phone, email, dob}) => {
                         // picture.medium
-                    return (<p key={login.uuid} className="employees" style={styles.card}>{name.first} {name.last} {phone} {email}</p>)
+                    return (<p key={login.uuid} className="employees" style={styles.card}><img src= {picture.medium} alt="photo" /> {name.first} {name.last} {phone} {email}</p>)
                     })
                 ) : (
                     <></>

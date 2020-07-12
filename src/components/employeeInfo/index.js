@@ -3,6 +3,7 @@ import API from "../../utils/API";
 import EmployeeBody from "../employeeBody/index";
 import './style.css';
 import SearchForm from "../SearchForm/index";
+import Header from "../Header/index";
 
 
 class EmployeeDetail extends Component {
@@ -40,7 +41,7 @@ class EmployeeDetail extends Component {
     render() { 
         return(
         <div className="employees">
-            {/* Inlcude here our searchbar */}
+            <Header/>
             <SearchForm
                 handleFormSubmit={this.handleFormSubmit}
                 handleInputChange={this.handleInputChange}
