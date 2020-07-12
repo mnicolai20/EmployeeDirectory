@@ -22,7 +22,12 @@ class EmployeeDetail extends Component {
 
     //onchange (and pass into searchbar as a prompt)
     handleInputChange = event => {
-        this.setState({ search: event.target.value });
+        const filter = event.target.value;
+        const newList = this.state.users.filter(user => {
+            let value = Object.values(user).join("").toLowerCase();
+            return value.indexOf(filter.toLowerCase()) !== -1;
+        })
+        this.setState({ search: filter, filteredUsers: newList });
     };
 
     handleFormSubmit = event => {
