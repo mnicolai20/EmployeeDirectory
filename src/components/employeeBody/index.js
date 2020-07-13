@@ -4,7 +4,8 @@ import './style.css';
 const styles = {
     card: {
       margin: 20,
-      background: "lightblue"
+      background: "lightblue",
+      Text: "strong"
     }
 };
 
@@ -27,7 +28,7 @@ function formatBirthday(date) {
             {
                 users[0] !== undefined && users[0].name !== undefined ? (
                     users.map(({ login, name, picture, phone, email, dob}) => {
-                        // Need to edit how date of birth is shown
+
                     return (<p key={login.uuid} className="employees" style={styles.card}><img src= {picture.medium} alt="photo" /> {name.first} {name.last} {formatBirthday(dob.date)} {phone} {email}</p>)
                     })
                 ) : (
